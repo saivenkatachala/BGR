@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Background Remover</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form>
+                <h1 style="text-align: center;">Background Remover</h1>
+                <div class="form-group">
+                    <label for="imageUpload">Upload an Image</label>
+                    <input type="file" id="imageUpload" accept="image/*">
+                </div>
+                <button type="button" id="removeBackgroundBtn" disabled>Remove Background</button>
+            </form>
+            
+            <div class="loader" id="loader"></div>
+            
+            <canvas id="outputCanvas"></canvas>
+            
+            <div id="buttons-container">
+                <button id="downloadBtn" style="display: none;">Download</button>
+                <button id="copyBtn" style="display: none;">Copy</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
